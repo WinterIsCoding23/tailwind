@@ -31,7 +31,7 @@ const SideBarIcon = ({ icon, text = "tooltip 💡" }) => (
 );
 SideBarIcon.propTypes = {
   icon: PropTypes.element.isRequired,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
 };
 
 const Divider = () => <hr className="sidebar-hr" />;
