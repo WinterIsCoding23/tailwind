@@ -1,6 +1,8 @@
 import { BsPlus, BsFillLightningFill, BsGearFill } from "react-icons/bs";
 import { FaFire, FaPoo } from "react-icons/fa";
 
+import PropTypes from "prop-types";
+
 const SideBar = () => {
   return (
     <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col bg-white dark:bg-gray-900 shadow-lg">
@@ -27,6 +29,10 @@ const SideBarIcon = ({ icon, text = "tooltip 💡" }) => (
     <span className="sidebar-tooltip group-hover:scale-100">{text}</span>
   </div>
 );
+SideBarIcon.propTypes = {
+  icon: PropTypes.element.isRequired,
+  text: PropTypes.string.isRequired,
+};
 
 const Divider = () => <hr className="sidebar-hr" />;
 
