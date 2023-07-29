@@ -2,6 +2,9 @@
 const colors = require("tailwindcss/colors");
 
 export default {
+  mode: "jit",
+  // darkMode: "class" --> tailwind looks for className "dark" and applies style (see SideBar-component)
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
