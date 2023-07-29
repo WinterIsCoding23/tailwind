@@ -1,7 +1,12 @@
 import "./index.css";
+import SideBar from "./components/SideBar";
 
 function App() {
-  return <div className="flex">Hello World</div>;
+  return (
+    <div className="flex">
+      <SideBar />
+    </div>
+  );
 }
 
 export default App;
